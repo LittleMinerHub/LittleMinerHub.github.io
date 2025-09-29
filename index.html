@@ -4,63 +4,230 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Little Miner Hub</title>
+  <meta name="description" content="Destruye terreno generado por marching cubes, vende tus minerales y mejora tu campamento en Little Miner Hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Images/Player-nobackground.png">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>⛏️ Little Miner Hub</h1>
-    <p>¡Explora, excava y conviértete en el mejor minero!</p>
+  <header class="site-header" id="inicio">
+    <div class="container nav-container">
+      <div class="logo">Little Miner Hub</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Abrir menú</span>
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav class="main-nav" id="primary-navigation">
+        <a href="#sobre">Sobre</a>
+        <a href="#loop">Loop de juego</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#galeria">Galería</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#descarga">Descargar</a>
+        <a class="nav-cta" href="#descarga">Jugar ahora</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="img/gameplay.gif" alt="Gameplay de Little Miner Hub">
-    <a href="#descargar" class="boton">Descargar Ahora</a>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Juego indie de minería procedural</p>
+          <h1>Excava, comercia y expande tu refugio subterráneo</h1>
+          <p>Little Miner Hub mezcla excavación con simulación económica. Pulveriza el terreno generado por marching cubes, recolecta vetas brillantes y usa tus ganancias para desbloquear nuevas máquinas y aliados.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#descarga">Descargar demo</a>
+            <a class="btn ghost" href="#loop">Ver loop de juego</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Terreno destructible totalmente volumétrico</li>
+            <li>Minerales con físicas y rarezas únicas</li>
+            <li>Mejoras visibles en tu pequeño poblado minero</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="Images/Captura_de_pantalla_254.png" alt="Excavando en Little Miner Hub" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-  <!-- Descripción del Juego -->
-  <section class="descripcion">
-    <h2>¿De qué trata?</h2>
-    <p>
-      Little Miner Hub es un juego de minería en el que tendrás que excavar en busca de minerales raros, mejorar tus herramientas y construir tu base subterránea. ¡Descubre secretos escondidos en las profundidades!
-    </p>
-  </section>
+    <section class="section" id="sobre">
+      <div class="container two-columns">
+        <div>
+          <h2>Un ecosistema de minería vivo</h2>
+          <p>Tu hub comienza como una base improvisada en una caverna abandonada. Cada mineral que vendas alimenta una economía propia: artesanos, mercaderes y exploradores llegarán listos para ayudarte a perforar capas más peligrosas.</p>
+          <p>El terreno se comporta como en la vida real gracias a marching cubes: fragmenta, cae y reacciona a tus herramientas y explosivos. Planifica cada excavación para evitar derrumbes y encontrar los minerales más valiosos.</p>
+        </div>
+        <div class="feature-card">
+          <img src="Images/BlackSmith.png" alt="Forjador en el hub" loading="lazy">
+          <div>
+            <h3>Forja en expansión</h3>
+            <p>Los NPC actualizan tus picos y taladros para llegar más profundo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Características -->
-  <section class="caracteristicas">
-    <h2>Características</h2>
-    <ul>
-      <li>🎮 Jugabilidad casual y adictiva</li>
-      <li>💎 Minerales raros y mejoras desbloqueables</li>
-      <li>🛠️ Sistema de mejoras y crafting</li>
-      <li>🌍 Entornos generados aleatoriamente</li>
-    </ul>
-  </section>
+    <section class="section loop" id="loop">
+      <div class="container">
+        <h2>Loop de juego</h2>
+        <div class="loop-steps">
+          <div class="loop-step">
+            <span class="step-number">01</span>
+            <h3>Pica el terreno</h3>
+            <p>Abre túneles a tu manera, usando herramientas, explosivos o drones autónomos.</p>
+            <img src="Images/1.png" alt="Picar terreno" loading="lazy">
+          </div>
+          <div class="loop-step">
+            <span class="step-number">02</span>
+            <h3>Procesa y vende</h3>
+            <p>Refina minerales en el Guild Market para conseguir contratos más lucrativos.</p>
+            <img src="Images/Guild.png" alt="Guild Market" loading="lazy">
+          </div>
+          <div class="loop-step">
+            <span class="step-number">03</span>
+            <h3>Mejora tu hub</h3>
+            <p>Invierte en nuevas estructuras, energía e investigadores para desbloquear biomas.</p>
+            <img src="Images/Windmill.png" alt="Construcciones del hub" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Capturas -->
-  <section class="galeria">
-    <h2>Capturas del juego</h2>
-    <div class="imagenes">
-      <img src="img/screenshot1.png" alt="Captura 1">
-      <img src="img/screenshot2.png" alt="Captura 2">
-      <img src="img/screenshot3.png" alt="Captura 3">
+    <section class="section" id="caracteristicas">
+      <div class="container features-grid">
+        <article class="feature">
+          <span class="icon">🧭</span>
+          <h3>Exploración procedural</h3>
+          <p>Cada capa del subsuelo genera cavernas y tesoros distintos en cada sesión.</p>
+        </article>
+        <article class="feature">
+          <span class="icon">🛒</span>
+          <h3>Economía reactiva</h3>
+          <p>Los precios cambian según la escasez; elige vender ahora o almacenar tus hallazgos.</p>
+        </article>
+        <article class="feature">
+          <span class="icon">🤝</span>
+          <h3>Hub colaborativo</h3>
+          <p>Construye talleres para que nuevos personajes se unan y aporten habilidades únicas.</p>
+        </article>
+        <article class="feature">
+          <span class="icon">⚙️</span>
+          <h3>Progresión visible</h3>
+          <p>Cada mejora transforma el aspecto y la eficiencia de tu campamento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <h2>Visita el hub</h2>
+        <p class="gallery-intro">Un vistazo a algunos de los rincones que podrás desbloquear a medida que avances.</p>
+        <div class="gallery-grid">
+          <img src="Images/Captura_de_pantalla_250.png" alt="Vista aérea del hub" loading="lazy">
+          <img src="Images/Captura_de_pantalla_251.png" alt="Interior de la mina" loading="lazy">
+          <img src="Images/Captura_de_pantalla_252.png" alt="Refinería de minerales" loading="lazy">
+          <img src="Images/Captura_de_pantalla_253.png" alt="Zona agrícola subterránea" loading="lazy">
+          <img src="Images/Captura_de_pantalla_255.png" alt="Excavación profunda" loading="lazy">
+          <img src="Images/2.png" alt="Estructuras del hub" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section team" id="equipo">
+      <div class="container">
+        <h2>El equipo</h2>
+        <p class="team-intro">Little Miner Hub cobra vida gracias a un pequeño grupo de creadores que combinan programación, arte y diseño de sistemas.</p>
+        <div class="team-visual">
+          <img src="Images/Player.png" alt="Personaje jugable de Little Miner Hub" loading="lazy">
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <h3>Pau Badia Villanueva</h3>
+            <p class="role">Programador</p>
+            <a class="btn ghost small" href="https://portfolio-pau-badia.example" target="_blank" rel="noopener">Ver portfolio</a>
+          </article>
+          <article class="team-card">
+            <h3>Ruben Gil Fabregat</h3>
+            <p class="role">Programador y diseñador</p>
+            <a class="btn ghost small" href="https://portfolio-ruben-gil.example" target="_blank" rel="noopener">Ver portfolio</a>
+          </article>
+          <article class="team-card">
+            <h3>Carlos Garcia Roig</h3>
+            <p class="role">Programador</p>
+            <a class="btn ghost small" href="https://portfolio-carlos-garcia.example" target="_blank" rel="noopener">Ver portfolio</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section downloads" id="descarga">
+      <div class="container">
+        <h2>Descarga y únete a la expedición</h2>
+        <p>La demo incluye los dos primeros biomas, el mercado completo y progresión hasta la Fraguarca.</p>
+        <div class="download-action">
+          <a class="btn primary large" href="link-a-tu-juego.exe">Descargar demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Little Miner Hub</h3>
+        <p>Un proyecto independiente creado con cariño por el equipo de Little Miner Hub.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>littleminerhub@outlook.com</p>
+      </div>
+      <div>
+        <h4>Sigue las novedades</h4>
+        <p>Comparte tus hallazgos con <strong>#LittleMinerHub</strong>.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Descarga -->
-  <section class="descarga" id="descargar">
-    <h2>Descarga</h2>
-    <p>Disponible para Windows y Android</p>
-    <a href="link-a-tu-juego.exe" class="boton">Descargar para Windows</a>
-    <a href="link-a-tu-juego.apk" class="boton">Descargar para Android</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Little Miner Hub. Desarrollado por [Tu Nombre].</p>
+    <p class="legal">&copy; 2025 Little Miner Hub. Todos los derechos reservados.</p>
   </footer>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('primary-navigation');
+    if (navToggle && nav) {
+      const mobileQuery = window.matchMedia('(max-width: 768px)');
+      const closeMenu = () => {
+        nav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      };
 
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('is-open');
+      });
+
+      const handleBreakpointChange = (event) => {
+        if (!event.matches) {
+          closeMenu();
+        }
+      };
+
+      if (typeof mobileQuery.addEventListener === 'function') {
+        mobileQuery.addEventListener('change', handleBreakpointChange);
+      } else if (typeof mobileQuery.addListener === 'function') {
+        mobileQuery.addListener(handleBreakpointChange);
+      }
+
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (mobileQuery.matches) {
+            closeMenu();
+          }
+        });
+      });
+    }
+  </script>
 </body>
 </html>
