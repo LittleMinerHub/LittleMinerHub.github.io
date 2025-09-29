@@ -20,19 +20,16 @@
         <span class="nav-toggle-icon"></span>
       </button>
       <nav class="main-nav" id="primary-navigation">
-        <a href="#sobre">Sobre</a>
-        <a href="#loop">Loop de juego</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#galeria">Galería</a>
+        <a href="#inicio">Inicio</a>
         <a href="#equipo">Equipo</a>
-        <a href="#descarga">Descargar</a>
-        <a class="nav-cta" href="#descarga">Jugar ahora</a>
+        <a href="#galeria">Galería</a>
+        <a class="nav-cta" href="#inicio">Jugar ahora</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio">
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Juego indie de minería procedural</p>
@@ -40,7 +37,7 @@
           <p>Little Miner Hub mezcla excavación con simulación económica. Pulveriza el terreno generado por marching cubes, recolecta vetas brillantes y usa tus ganancias para desbloquear nuevas máquinas y aliados.</p>
           <div class="cta-row">
             <a class="btn primary" href="#descarga">Descargar demo</a>
-            <a class="btn ghost" href="#loop">Ver loop de juego</a>
+            <a class="btn ghost" href="#galeria">Ver galería</a>
           </div>
           <ul class="hero-highlights">
             <li>Terreno destructible totalmente volumétrico</li>
@@ -53,90 +50,6 @@
         </div>
       </div>
     </section>
-
-    <section class="section" id="sobre">
-      <div class="container two-columns">
-        <div>
-          <h2>Un ecosistema de minería vivo</h2>
-          <p>Tu hub comienza como una base improvisada en una caverna abandonada. Cada mineral que vendas alimenta una economía propia: artesanos, mercaderes y exploradores llegarán listos para ayudarte a perforar capas más peligrosas.</p>
-          <p>El terreno se comporta como en la vida real gracias a marching cubes: fragmenta, cae y reacciona a tus herramientas y explosivos. Planifica cada excavación para evitar derrumbes y encontrar los minerales más valiosos.</p>
-        </div>
-        <div class="feature-card">
-          <img src="Images/BlackSmith.png" alt="Forjador en el hub" loading="lazy">
-          <div>
-            <h3>Forja en expansión</h3>
-            <p>Los NPC actualizan tus picos y taladros para llegar más profundo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section loop" id="loop">
-      <div class="container">
-        <h2>Loop de juego</h2>
-        <div class="loop-steps">
-          <div class="loop-step">
-            <span class="step-number">01</span>
-            <h3>Pica el terreno</h3>
-            <p>Abre túneles a tu manera, usando herramientas, explosivos o drones autónomos.</p>
-            <img src="Images/1.png" alt="Picar terreno" loading="lazy">
-          </div>
-          <div class="loop-step">
-            <span class="step-number">02</span>
-            <h3>Procesa y vende</h3>
-            <p>Refina minerales en el Guild Market para conseguir contratos más lucrativos.</p>
-            <img src="Images/Guild.png" alt="Guild Market" loading="lazy">
-          </div>
-          <div class="loop-step">
-            <span class="step-number">03</span>
-            <h3>Mejora tu hub</h3>
-            <p>Invierte en nuevas estructuras, energía e investigadores para desbloquear biomas.</p>
-            <img src="Images/Windmill.png" alt="Construcciones del hub" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="caracteristicas">
-      <div class="container features-grid">
-        <article class="feature">
-          <span class="icon">🧭</span>
-          <h3>Exploración procedural</h3>
-          <p>Cada capa del subsuelo genera cavernas y tesoros distintos en cada sesión.</p>
-        </article>
-        <article class="feature">
-          <span class="icon">🛒</span>
-          <h3>Economía reactiva</h3>
-          <p>Los precios cambian según la escasez; elige vender ahora o almacenar tus hallazgos.</p>
-        </article>
-        <article class="feature">
-          <span class="icon">🤝</span>
-          <h3>Hub colaborativo</h3>
-          <p>Construye talleres para que nuevos personajes se unan y aporten habilidades únicas.</p>
-        </article>
-        <article class="feature">
-          <span class="icon">⚙️</span>
-          <h3>Progresión visible</h3>
-          <p>Cada mejora transforma el aspecto y la eficiencia de tu campamento.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section gallery" id="galeria">
-      <div class="container">
-        <h2>Visita el hub</h2>
-        <p class="gallery-intro">Un vistazo a algunos de los rincones que podrás desbloquear a medida que avances.</p>
-        <div class="gallery-grid">
-          <img src="Images/Captura_de_pantalla_250.png" alt="Vista aérea del hub" loading="lazy">
-          <img src="Images/Captura_de_pantalla_251.png" alt="Interior de la mina" loading="lazy">
-          <img src="Images/Captura_de_pantalla_252.png" alt="Refinería de minerales" loading="lazy">
-          <img src="Images/Captura_de_pantalla_253.png" alt="Zona agrícola subterránea" loading="lazy">
-          <img src="Images/Captura_de_pantalla_255.png" alt="Excavación profunda" loading="lazy">
-          <img src="Images/2.png" alt="Estructuras del hub" loading="lazy">
-        </div>
-      </div>
-    </section>
-
     <section class="section team" id="equipo">
       <div class="container">
         <h2>El equipo</h2>
@@ -163,16 +76,41 @@
         </div>
       </div>
     </section>
-
-    <section class="section downloads" id="descarga">
+    <section class="section gallery" id="galeria">
       <div class="container">
-        <h2>Descarga y únete a la expedición</h2>
-        <p>La demo incluye los dos primeros biomas, el mercado completo y progresión hasta la Fraguarca.</p>
-        <div class="download-action">
-          <a class="btn primary large" href="link-a-tu-juego.exe">Descargar demo</a>
+        <h2>Visita el hub</h2>
+        <p class="gallery-intro">Un vistazo a algunos de los rincones que podrás desbloquear a medida que avances.</p>
+        <div class="gallery-grid">
+          <button class="gallery-item" type="button" data-index="0">
+            <img src="Images/Captura_de_pantalla_250.png" alt="Vista aérea del hub" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-index="1">
+            <img src="Images/Captura_de_pantalla_251.png" alt="Interior de la mina" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-index="2">
+            <img src="Images/Captura_de_pantalla_252.png" alt="Refinería de minerales" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-index="3">
+            <img src="Images/Captura_de_pantalla_253.png" alt="Zona agrícola subterránea" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-index="4">
+            <img src="Images/Captura_de_pantalla_255.png" alt="Excavación profunda" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-index="5">
+            <img src="Images/2.png" alt="Estructuras del hub" loading="lazy">
+          </button>
         </div>
       </div>
     </section>
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Galería de imágenes">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">&times;</button>
+      <button class="lightbox-prev" type="button" aria-label="Imagen anterior">&lsaquo;</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-next" type="button" aria-label="Imagen siguiente">&rsaquo;</button>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -226,6 +164,88 @@
             closeMenu();
           }
         });
+      });
+    }
+
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    const lightbox = document.querySelector('.lightbox');
+    if (galleryItems.length && lightbox) {
+      const lightboxImage = lightbox.querySelector('img');
+      const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+      const prevButton = lightbox.querySelector('.lightbox-prev');
+      const nextButton = lightbox.querySelector('.lightbox-next');
+      const closeButton = lightbox.querySelector('.lightbox-close');
+      const images = galleryItems.map((item) => {
+        const img = item.querySelector('img');
+        return { src: img.getAttribute('src'), alt: img.getAttribute('alt') };
+      });
+      let currentIndex = 0;
+      let lastFocusedElement = null;
+
+      const updateLightbox = (index) => {
+        currentIndex = (index + images.length) % images.length;
+        const { src, alt } = images[currentIndex];
+        lightboxImage.src = src;
+        lightboxImage.alt = alt;
+        lightboxCaption.textContent = alt;
+      };
+
+      const openLightbox = (index) => {
+        lastFocusedElement = document.activeElement;
+        updateLightbox(index);
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        closeButton.focus();
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      };
+
+      const showNext = (step) => {
+        updateLightbox(currentIndex + step);
+      };
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openLightbox(index));
+        item.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLightbox(index);
+          }
+        });
+      });
+
+      nextButton.addEventListener('click', () => showNext(1));
+      prevButton.addEventListener('click', () => showNext(-1));
+      closeButton.addEventListener('click', closeLightbox);
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (!lightbox.classList.contains('is-open')) {
+          return;
+        }
+
+        if (event.key === 'Escape') {
+          closeLightbox();
+        }
+        if (event.key === 'ArrowRight') {
+          showNext(1);
+        }
+        if (event.key === 'ArrowLeft') {
+          showNext(-1);
+        }
       });
     }
   </script>
