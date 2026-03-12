@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Little Miner World – Demo</title>
+<title>Little Miner World</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -288,78 +288,13 @@
     padding-bottom: 56.25%;
     border-radius: 7px;
     overflow: hidden;
-    border: 1px solid var(--border);
-    background: #0e1a0a;
-    cursor: pointer;
+    background: #000;
   }
 
   .video-wrap iframe {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     border: none;
-  }
-
-  .video-thumb {
-    position: absolute; inset: 0;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    gap: 14px;
-    background: #0e1a0a;
-    overflow: hidden;
-  }
-
-  .video-thumb img.yt-thumb {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .video-thumb::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: rgba(0,0,0,0.38);
-    z-index: 1;
-  }
-
-  .video-thumb .play-ring,
-  .video-thumb .video-thumb-lbl {
-    position: relative;
-    z-index: 2;
-  }
-
-  .video-thumb:hover .play-ring { transform: scale(1.07); }
-
-  .play-ring {
-    width: 56px; height: 56px;
-    border-radius: 50%;
-    border: 2px solid rgba(212,172,82,0.7);
-    display: flex; align-items: center; justify-content: center;
-    transition: transform 0.2s;
-    position: relative;
-  }
-
-  .play-ring::before {
-    content: '';
-    position: absolute; inset: -7px;
-    border-radius: 50%;
-    border: 1px solid rgba(212,172,82,0.2);
-    animation: ringPulse 2.5s ease-in-out infinite;
-  }
-
-  @keyframes ringPulse {
-    0%,100% { opacity: 0.6; transform: scale(1); }
-    50%      { opacity: 0;   transform: scale(1.4); }
-  }
-
-  .play-ring svg { width: 20px; height: 20px; fill: var(--gold-lt); margin-left: 3px; }
-
-  .video-thumb-lbl {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: rgba(212,172,82,0.5);
   }
 
   .video-caption {
@@ -553,6 +488,7 @@
 <!-- ─── BANNER ─── -->
 <header class="banner">
   <img class="banner-bg" src="images/banner.png" alt="" onerror="this.style.display='none'">
+
   <p class="banner-eyebrow">⛏ &ensp; Demo — Disponible Ahora &ensp; ⛏</p>
   <h1 class="banner-title">Little Miner World</h1>
   <div class="banner-rule"></div>
@@ -571,18 +507,9 @@
       <h2 class="card-title">Video Demo</h2>
     </div>
     <div class="card-body">
-      <a href="https://youtu.be/NV-qMSGTEmk?si=X43o71ZH_0zwrl6W" target="_blank" rel="noopener" style="text-decoration:none;">
-        <div class="video-wrap">
-          <div class="video-thumb">
-            <img class="yt-thumb" src="https://img.youtube.com/vi/NV-qMSGTEmk/maxresdefault.jpg" alt="Miniatura del trailer" onerror="this.src='https://img.youtube.com/vi/NV-qMSGTEmk/hqdefault.jpg'">
-            <div class="play-ring">
-              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-            <span class="video-thumb-lbl">Ver Trailer</span>
-          </div>
-        </div>
-      </a>
-      <p class="video-caption">Haz clic para ver el trailer en YouTube</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/NV-qMSGTEmk" title="Little Miner World – Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
@@ -597,19 +524,19 @@
     <div class="card-body">
       <div class="ss-grid">
         <div class="ss-item ss-1">
-          <img src="images/imagen_1.png" alt="Captura 1" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
+          <img src="images/image_1.png" alt="Captura 1" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
           <div class="ss-ph" id="ss-ph-1">🌿<span class="ss-lbl">Exploración</span></div>
         </div>
         <div class="ss-item ss-2">
-          <img src="images/imagen_2.png" alt="Captura 2" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
+          <img src="images/image_2.png" alt="Captura 2" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
           <div class="ss-ph" id="ss-ph-2">⛏️<span class="ss-lbl">Minería</span></div>
         </div>
         <div class="ss-item ss-3">
-          <img src="images/imagen_3.png" alt="Captura 3" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
+          <img src="images/image_3.png" alt="Captura 3" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
           <div class="ss-ph" id="ss-ph-3">💎<span class="ss-lbl">Recursos</span></div>
         </div>
         <div class="ss-item ss-4">
-          <img src="images/imagen_4.png" alt="Captura 4" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
+          <img src="images/image_4.png" alt="Captura 4" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'">
           <div class="ss-ph" id="ss-ph-4">🏠<span class="ss-lbl">Base</span></div>
         </div>
       </div>
@@ -651,13 +578,12 @@
         <div class="member">
           <div class="role-bar bar-dev"></div>
           <div class="avatar av-1"><img src="images/dev_1.png" alt="Dev 1" onerror="this.parentElement.innerHTML='🧑‍💻'"></div>
-          <h3 class="member-name">Rubén Gil Fabregat</h3>
+          <h3 class="member-name">Nombre Dev 1</h3>
           <p class="member-role">Desarrollador</p>
           <div class="m-div"></div>
           <p class="member-desc">Lógica del juego, mecánicas de minería, sistemas de progresión del jugador y arte 3D/UI.</p>
           <div class="member-skills">
             <span class="skill">Código</span>
-               <span class="skill">Arte</span>
             <span class="skill">Game Design</span>
             <span class="skill">Gameplay</span>
           </div>
@@ -666,42 +592,35 @@
         <div class="member">
           <div class="role-bar bar-dev"></div>
           <div class="avatar av-2"><img src="images/dev_2.png" alt="Dev 2" onerror="this.parentElement.innerHTML='🧑‍🎨'"></div>
-          <h3 class="member-name">Pau Badía Villanueva</h3>
+          <h3 class="member-name">Nombre Dev 2</h3>
           <p class="member-role">Desarrollador</p>
           <div class="m-div"></div>
           <p class="member-desc">Sistema de diálogo con NPC's, inventario del jugador y misiones.</p>
           <div class="member-skills">
             <span class="skill">Código</span>
+            <span class="skill">NPC's</span>
             <span class="skill">Sistemas</span>
-              <span class="skill">Gameplay</span>
+            <span class="skill">Gameplay</span>
           </div>
         </div>
 
         <div class="member">
           <div class="role-bar bar-help"></div>
           <div class="avatar av-3"><img src="images/dev_3.png" alt="Dev 3" onerror="this.parentElement.innerHTML='🤝'"></div>
-          <h3 class="member-name">Carlos García Roig</h3>
+          <h3 class="member-name">Nombre Ayudante</h3>
           <p class="member-role">Colaborador</p>
           <div class="m-div"></div>
           <p class="member-desc">Sistema de guardado y soporte durante el desarrollo.</p>
           <div class="member-skills">
-            <span class="skill">Código</span>
             <span class="skill">Sistemas</span>
           </div>
         </div>
 
       </div>
-    </div>
-  </div>
 
-</main>
-
-<footer>
-  <div class="footer-rule"></div>
-  <p>Little Miner World - <strong>Cargo Whale Studio</strong> © 2026 — Todos los derechos reservados</p>
-</footer>
-
-
-
-</body>
-</html>
+      <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border);">
+        <p style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-lt); margin-bottom: 8px;">Contacto</p>
+        <p style="font-size: 12.5px; color: var(--text-md); line-height: 2;">
+          <a href="/cdn-cgi/l/email-protection#2c5e594e454f4448495a6c4b414d4540024f4341" style="color: var(--accent); text-decoration: none;"><span class="__cf_email__" data-cfemail="d4a6a1b6bdb7bcb0b1a294b3b9b5bdb8fab7bbb9">[email&#160;protected]</span> / <span class="__cf_email__" data-cfemail="ccbcadb9aeada8a5fdf98caba1ada5a0e2afa3a1">[email&#160;protected]</span></a><br>
+        </p>
+      </di
