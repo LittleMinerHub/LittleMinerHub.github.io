@@ -288,13 +288,78 @@
     padding-bottom: 56.25%;
     border-radius: 7px;
     overflow: hidden;
-    background: #000;
+    border: 1px solid var(--border);
+    background: #0e1a0a;
+    cursor: pointer;
   }
 
   .video-wrap iframe {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     border: none;
+  }
+
+  .video-thumb {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 14px;
+    background: #0e1a0a;
+    overflow: hidden;
+  }
+
+  .video-thumb img.yt-thumb {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .video-thumb::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.38);
+    z-index: 1;
+  }
+
+  .video-thumb .play-ring,
+  .video-thumb .video-thumb-lbl {
+    position: relative;
+    z-index: 2;
+  }
+
+  .video-thumb:hover .play-ring { transform: scale(1.07); }
+
+  .play-ring {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(212,172,82,0.7);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.2s;
+    position: relative;
+  }
+
+  .play-ring::before {
+    content: '';
+    position: absolute; inset: -7px;
+    border-radius: 50%;
+    border: 1px solid rgba(212,172,82,0.2);
+    animation: ringPulse 2.5s ease-in-out infinite;
+  }
+
+  @keyframes ringPulse {
+    0%,100% { opacity: 0.6; transform: scale(1); }
+    50%      { opacity: 0;   transform: scale(1.4); }
+  }
+
+  .play-ring svg { width: 20px; height: 20px; fill: var(--gold-lt); margin-left: 3px; }
+
+  .video-thumb-lbl {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(212,172,82,0.5);
   }
 
   .video-caption {
@@ -498,7 +563,7 @@
 <!-- ─── GRID ─── -->
 <main class="page">
 
-  <!-- VIDEO -->
+ <!-- VIDEO -->
   <div class="card video-card">
     <div class="card-accent accent-green"></div>
     <div class="card-header">
@@ -508,7 +573,7 @@
     </div>
     <div class="card-body">
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/NV-qMSGTEmk" title="Little Miner World – Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/NV-qMSGTEmk?rel=0&modestbranding=1" title="Little Miner World – Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -578,7 +643,7 @@
         <div class="member">
           <div class="role-bar bar-dev"></div>
           <div class="avatar av-1"><img src="images/dev_1.png" alt="Dev 1" onerror="this.parentElement.innerHTML='🧑‍💻'"></div>
-          <h3 class="member-name">Nombre Dev 1</h3>
+          <h3 class="member-name">Rubén Gil Fabregat</h3>
           <p class="member-role">Desarrollador</p>
           <div class="m-div"></div>
           <p class="member-desc">Lógica del juego, mecánicas de minería, sistemas de progresión del jugador y arte 3D/UI.</p>
@@ -592,7 +657,7 @@
         <div class="member">
           <div class="role-bar bar-dev"></div>
           <div class="avatar av-2"><img src="images/dev_2.png" alt="Dev 2" onerror="this.parentElement.innerHTML='🧑‍🎨'"></div>
-          <h3 class="member-name">Nombre Dev 2</h3>
+          <h3 class="member-name">Pau Badía Villanueva</h3>
           <p class="member-role">Desarrollador</p>
           <div class="m-div"></div>
           <p class="member-desc">Sistema de diálogo con NPC's, inventario del jugador y misiones.</p>
@@ -607,7 +672,7 @@
         <div class="member">
           <div class="role-bar bar-help"></div>
           <div class="avatar av-3"><img src="images/dev_3.png" alt="Dev 3" onerror="this.parentElement.innerHTML='🤝'"></div>
-          <h3 class="member-name">Nombre Ayudante</h3>
+          <h3 class="member-name">Carlos García Roig</h3>
           <p class="member-role">Colaborador</p>
           <div class="m-div"></div>
           <p class="member-desc">Sistema de guardado y soporte durante el desarrollo.</p>
@@ -621,6 +686,21 @@
       <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border);">
         <p style="font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--text-lt); margin-bottom: 8px;">Contacto</p>
         <p style="font-size: 12.5px; color: var(--text-md); line-height: 2;">
-          <a href="/cdn-cgi/l/email-protection#2c5e594e454f4448495a6c4b414d4540024f4341" style="color: var(--accent); text-decoration: none;"><span class="__cf_email__" data-cfemail="d4a6a1b6bdb7bcb0b1a294b3b9b5bdb8fab7bbb9">[email&#160;protected]</span> / <span class="__cf_email__" data-cfemail="ccbcadb9aeada8a5fdf98caba1ada5a0e2afa3a1">[email&#160;protected]</span></a><br>
+          <a href="mailto:rubichdev@gmail.com" style="color: var(--accent); text-decoration: none;">rubichdev@gmail.com / paubadi15@gmail.com</a><br>
         </p>
-      </di
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-rule"></div>
+  <p>Little Miner World - <strong>Cargo Whale Studio</strong> © 2026 — Todos los derechos reservados</p>
+</footer>
+
+
+
+</body>
+</html>
